@@ -1,6 +1,6 @@
 <?php
 if (isset($_GET["id"])) {
-    $id = intval($_GET["id"]); // Convertir el ID a número
+    $id = intval($_GET["id"]); 
     $url = "https://jsonplaceholder.typicode.com/posts/" . $id;
 
     $response = file_get_contents($url);
